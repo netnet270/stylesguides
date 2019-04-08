@@ -1,0 +1,61 @@
+// ======================================================
+// Components :: Radio
+// ======================================================
+
+.input-radio-custom {
+  position: relative;
+  margin-bottom: 8px;
+
+  label {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: $font-size-base;
+    font-weight: $font-weight-light;
+    color: $cl-black;
+    pointer-events: visible;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: $bg-white;
+      border: 1px solid $border-light-gray;
+      border-radius: 50%;
+    }
+    &:after {
+      content: '';
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      background-color: $bg-orange;
+      opacity: 0;
+    }
+  }
+
+  input[type='radio'] {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked ~ label {
+      &:before {
+        border-color: $border-gray-2;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .input-radio--disabled {
+    opacity: .8;
+  }
+}

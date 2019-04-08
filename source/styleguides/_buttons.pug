@@ -1,0 +1,191 @@
+//-------------------------------------------------------
+//- Styleguides :: Buttons
+//-------------------------------------------------------
+
+//- Buttons :: Type
+h2 Buttons Type
+-
+  var buttonTypes = [
+    { type: 'primary' },
+    { type: 'secondary' },
+    { type: 'olight' },
+    { type: 'blight' }
+  ];
+.row
+  each val in buttonTypes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val.type
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: '#{val.type}'
+            | })
+
+//- Button::Disable
+h2 Button Disable
+-
+  var buttonDisable = [
+    { type: 'primary', disabled: 'disabled' },
+    { type: 'secondary', disabled: 'disabled' },
+    { type: 'olight', disabled: 'disabled' },
+    { type: 'blight', disabled: 'disabled' }
+  ];
+
+.row
+  each val in buttonDisable
+    .col-3
+      .code-example
+        .demo
+          +buttons-disable({
+            text: 'テキストデモ',
+            disabled: val.disabled,
+            type: val.type
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   disabled: '#{val.disabled}',
+            |   type: '#{val.type}'
+            | })
+
+//- Button Size
+h2 Button Size
+-
+  var buttonSizes = [
+    { size: 'extra-small' },
+    { size: 'small' },
+    { size: 'large' }
+  ];
+.row
+  each val in buttonSizes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: 'primary',
+            size: val.size
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: 'primary',
+            |   size: '#{val.size}'
+            | })
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: 'secondary',
+            size: val.size
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: 'secondary',
+            |   size: '#{val.size}'
+            | })
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: 'olight',
+            size: val.size
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: 'olight',
+            |   size: '#{val.size}'
+            | })
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: 'blight',
+            size: val.size
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: 'blight',
+            |   size: '#{val.size}'
+            | })
+
+//- Buttons :: Icon
+h2 Button Icon
+
+.row
+  each val in buttonTypes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val.type,
+            iconFont: 'ion-android-done-all'
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: '#{val.type}',
+            |   iconFont: 'ion-android-done-all'
+            | })
+.row
+  each val in buttonTypes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val.type,
+            size: 'small',
+            iconFont: 'ion-android-done-all'
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: '#{val.type}',
+            |   size: 'small'
+            |   iconFont: 'ion-android-done-all'
+            | })
+  
+//- Button Full size
+h2 Button Full size
+
+.row
+  each val in buttonTypes
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val.type,
+            size: 'large',
+            isFull: true
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: '#{val.type}',
+            |   size: 'large',
+            |   isFull: true
+            | })
+    

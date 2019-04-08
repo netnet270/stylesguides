@@ -1,0 +1,97 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Paths
+$path-image: '../images';
+$path-fonts: '../fonts';
+
+// Fonts
+// >> Font-family
+$font-family-base : 'Hiragino Sans', 'Noto Sans Japanese', 'Yu Gothic', 'Meiryo', 'Hiragino Kaku Gothic Pro', '游ゴシック', 'メイリオ', 'MS ゴシック', 'sans-serif';
+// >> Font-size
+$font-size-xsmall : 11px;
+$font-size-small  : 12px;
+$font-size-base   : 13px;
+$font-size-medium : 16px;
+$font-size-large  : 18px;
+// >> Font-weight
+$font-weight-light: 300;
+$font-weight-base : 400;
+$font-weight-medium : 500;
+$font-weight-bold : 600;
+
+// Borders
+$border-radius-small : 2px;
+$border-radius-base  : 4px;
+$border-radius-medium: 8px;
+
+// z-index
+$z-indexes: (
+  base    : 1,
+  under   : -1,
+  modal   : 1001,
+  sidebar : 1000
+);
+
+// Color
+
+$cl-orange: #ff6b00;
+$cl-dark-orange: #e46000;
+$cl-light-orange: #ff9359;
+$cl-black: #373737;
+$cl-dark-gray: #888;
+$cl-gray: #b5b5b5;
+$cl-gray-2: #555;
+$cl-light-gray: #f0f0f0;
+$cl-blue: #3471eb;
+$cl-dark-blue: #083ea9;
+$cl-white: #fff;
+$cl-red: #ec3f3f;
+$cl-green: #43aa49;
+$cl-pink: #f05151;
+$cl-light-pink: #fa8383;
+$cl-sky: #4a90e2;
+$cl-yellow: #f1a336;
+
+//background
+
+$bg-orange: #ff6b00;
+$bg-dark-orange: #e46000;
+$bg-light-orange: #ff9359;
+$bg-black: #373737;
+$bg-dark-gray: #888;
+$bg-gray: #b5b5b5;
+$bg-light-gray: #f0f0f0;
+$bg-blue: #3471eb;
+$bg-dark-blue: #083ea9;
+$bg-white: #fff;
+$bg-red: #ec3f3f;
+$bg-green: #43aa49;
+$bg-pink: #f05151;
+$bg-light-pink: #fa8383;
+$bg-sky: #4a90e2;
+$bg-yellow: #f1a336;
+$bg-light-black: #555;
+$bg-blue : #3471eb;
+$bg-green-line: #34b900;
+
+//border
+
+$border-orange: #ff6b00;
+$border-dark-orange: #e46000;
+$border-light-orange: #ff9359;
+$border-black: #373737;
+$border-dark-gray: #888;
+$border-gray: #b5b5b5;
+$border-light-gray: #f0f0f0;
+$border-blue: #3471eb;
+$border-dark-blue: #083ea9;
+$border-white: #fff;
+$border-red: #ec3f3f;
+$border-green: #43aa49;
+$border-pink: #f05151;
+$border-light-pink: #fa8383;
+$border-sky: #4a90e2;
+$border-yellow: #f1a336;
+$border-gray-2: #f3d9c7;

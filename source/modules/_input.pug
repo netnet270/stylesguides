@@ -1,0 +1,91 @@
+//-------------------------------------------------------
+//- Modules :: Input
+//-------------------------------------------------------
+
+//- Input Field
+mixin input-field({ type, placeholder, value })
+  input.form-control(
+    type= type ? type : 'text'
+    placeholder= placeholder ? placeholder : null
+    value= value ? value : null
+  )
+
+mixin group-input-field({label, id, type, placeholder, value, size, require, iconBefore, iconAfter, noteText, noticeError, disabled})
+  .form-group.form-customize(
+    class= disabled ? `form-control__${disabled}` : null
+    class= noticeError ? `form-error` : null
+  )
+    label(
+      for= id ? id : null
+    )= label
+      if require
+        span.require *
+    .input-field(
+      class= size ? `input-field--${size}`: null,
+      class= iconBefore ? `input-field--icon-before`: null,
+      class= iconAfter ? `input-field--icon-toggle`: null,
+      class= (iconBefore && iconAfter) ? `input-field--show-icon` : null
+    )
+      if iconBefore
+        span.input-field__icon.input-field__icon--before
+          i(class= "ion-ios-email-outline")
+      input.form-control(
+        type= type ? type : 'text'
+        placeholder= placeholder ? placeholder : null
+        value= value ? value : null,
+        disabled= disabled ? disabled : null
+      )
+      if iconAfter
+        span.input-field__icon.input-field__icon--after.js-toggle-icon
+          i(class= "ion-ios-eye-outline")
+    if noteText
+      p.note-text= noteText
+    if noticeError
+      p.error-notice
+        i(class= "error-notice__icon ion-close-circled")
+        | #{noticeError}
+
+mixin group-input-field-readonly({ label, value })
+  .form-group.form-customize.form-readonly
+    label= label
+    input.form-control(
+      type='text'
+      value= value ? value : null
+      readonly
+    )
+
+mixin group-input-list-color({ label, id, type, placeholder, value})
+  .form-group.form-list-color
+    label(
+      for= id ? id : null
+    )= label
+     
+    .list-box.d-flex.justify-content-between.align-items-center
+      ul.unstyled.list-box__color.d-flex.justify-content-start
+        -
+          var data = [
+            '#373737',
+            '#555',
+            '#888',
+            '#b5b5b5',
+            '#f0f0f0',
+            '#ff6b00',
+            '#e46000',
+            '#ff9359',
+            '#083ea9',
+            '#3471eb',
+            '#548dff',
+            '#fff',
+            '#f05151',
+            '#fa8383',
+            '#43aa49',
+            '#ec3f3f',
+            '#4a90e2'
+          ];
+        each item in data
+          li.list-box__item(style=`background-color: ${item}` )
+      .list-box__input
+        +input-field({ type, placeholder, value })(
+          id= id ? id : null
+        )
+        i(class= "icon-images icon-images--color-picker")

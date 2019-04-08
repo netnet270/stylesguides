@@ -1,0 +1,17 @@
+//-------------------------------------------------------
+//- Modules :: Checkbox
+//-------------------------------------------------------
+
+//- Group Input Checkbox
+mixin group-input-checkbox({name, id, label, checked, disabled})
+  .form-group.input-checkbox-custom&attributes(attributes)
+    input.input-checkbox(
+      type= "checkbox"
+      name= name ? name : null
+      id= id ? id : null
+      checked= (checked !== true) ? false : true
+      disabled= (disabled !== true) ? false : true
+    )
+    label(
+      for= id ? id : null
+    )= label

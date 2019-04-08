@@ -1,0 +1,252 @@
+// ======================================================
+// Components :: Selectbox
+// ======================================================
+
+.select-box .form-control {
+  border-radius: $border-radius-medium;
+  font-size: $font-size-small;
+  height: 32px;
+  padding: 5px 10px;
+}
+
+.form-customize .custom-select {
+  border-radius: 0;
+  padding: 8px 25px 8px 16px;
+  line-height: 17px;
+  border: 1px solid $border-light-gray;
+  color: $cl-black;
+  margin-bottom: 8px;
+  height: 40px;
+  font-size: 13px;
+
+  &--disabled {
+    opacity: .7;
+  }
+
+  &:focus {
+    border-color: $border-white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+  }
+}
+
+.custom-selectbox {
+  width: 100%;
+  position: relative;
+
+
+  &__header {
+    position: relative;
+
+    &:after {
+      vertical-align: middle;
+      position: absolute;
+      z-index: 1;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-top: 4px solid $cl-black;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      width: 0;
+      height: 0;
+      content: '';
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    color: $cl-black;
+    border-bottom: 1px solid $cl-light-gray;
+    padding: 10px 16px;
+    white-space: normal;
+    line-height: 22px;
+
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+
+    &:hover,
+    &.active {
+      background-color: transparent;
+      color: $cl-orange;
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 30px 0 16px;
+    text-align: left;
+    font-size: 13px;
+    color: $cl-gray;
+    background: $cl-white;
+    border: 1px solid $cl-light-gray;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .25s ease;
+
+    &:hover {
+      color: $cl-black;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $cl-white;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    }
+
+    &:after {
+      vertical-align: middle;
+      position: absolute;
+      z-index: 1;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-top: 4px solid $cl-gray;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+    }
+  }
+
+  &__menu {
+    min-width: 100%;
+    right: 0;
+    border: 0;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .1);
+    border-radius: 3px;
+  }
+
+  &__list {
+    max-height: 320px;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $cl-gray;
+      border-radius: 2px;
+    }
+  }
+
+  &__label {
+    background-color: $cl-white;
+    width: 100%;
+    color: $cl-black;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__avatar {
+    width: 26px;
+    height: 26px;
+    margin-right: 14px;
+    background-color: $cl-white;
+    border-radius: 3px;
+    border: 1px solid $cl-dark-gray;
+  }
+
+  &__username {
+    font-size: 14px;
+    color: $cl-dark-gray;
+    font-weight: $font-weight-bold;
+  }
+
+  &--image {
+    .custom-selectbox__toggle {
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .custom-selectbox__item {
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      &:hover .custom-selectbox__username,
+      &.active .custom-selectbox__username {
+        color: $cl-white;
+      }
+    }
+  }
+
+  &--small {
+
+    .custom-selectbox__toggle {
+      height: 40px;
+      line-height: 38px;
+      font-size: 12px;
+      background-size: 11px;
+    }
+
+    .custom-selectbox__item {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    .custom-selectbox__label {
+      top: 8px;
+      margin-bottom: 4px;
+    }
+
+    .custom-selectbox__input .form-control {
+      font-size: 12px;
+    }
+  }
+
+  &.show .dropdown-toggle {
+    border-color: $cl-white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+  }
+
+  &__disabled {
+    pointer-events: none;
+    border-bottom: 1px solid $cl-gray;
+    color: $cl-gray;
+  }
+
+  &__input {
+    padding: 0 8px 8px;
+    border-bottom: 1px solid $cl-light-gray;
+
+    .form-control {
+      border-radius: 3px;
+      border-color: $cl-light-gray;
+      font-size: 14px;
+
+      &:-ms-input-placeholder,
+      &::placeholder {
+        color: $cl-gray-2;
+      }
+
+      &:focus {
+        border-color: $cl-orange;
+      }
+    }
+  }
+
+  &.selectbox-error .dropdown-toggle {
+    border-color: $cl-pink;
+
+    &:after {
+      border-top-color: $cl-pink;
+    }
+
+    &:focus {
+      border-color: $cl-pink;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+// ======================================================
+// Components :: Input
+// ======================================================
+
+.input-field {
+  $block: &;
+
+  background-color: $bg-white;
+  position: relative;
+  border: 1px solid $cl-light-gray;
+  box-shadow: 0 0 10px 0 transparent;
+  transition: all .25s ease;
+  border-radius: 3px;
+  overflow: hidden;
+
+  .form-control {
+    border: 0;
+    height: 40px;
+  }
+
+  &--icon-before {
+    .form-control {
+      width: calc(100% - 32px);
+      margin-left: 32px;
+    }
+  }
+
+  &--icon-toggle {
+    .form-control {
+      width: calc(100% - 48px);
+      margin-right: 48px;
+    }
+  }
+
+  &--show-icon {
+    .form-control {
+      width: calc(100% - 96px);
+      margin: 0 48px;
+    }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    top: 2px;
+    color: $cl-dark-gray;
+    text-align: center;
+    font-size: 20px;
+    transition: all .25s ease;
+
+    &--before {
+      left: 0;
+    }
+
+    &--after {
+      right: 0;
+      cursor: pointer;
+    }
+
+    &.show {
+      color: $cl-orange;
+    }
+  }
+
+  &--large {
+    .form-control {
+      height: 48px;
+      font-size: $font-size-base;
+    }
+
+    .input-field__icon {
+      top: 6px;
+
+      &--before {
+        border-right: 1px solid $border-light-gray;
+      }
+    }
+
+    .input-field--icon-before {
+      .form-control {
+        width: calc(100% - 48px);
+        margin-left: 48px;
+      }
+    }
+  }
+}
+
+

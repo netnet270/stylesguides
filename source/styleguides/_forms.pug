@@ -1,0 +1,701 @@
+//-------------------------------------------------------
+//- Styleguides :: Form
+//-------------------------------------------------------
+
+h2 Input field
+
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間'
+          })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間'
+          |   })
+
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field-readonly({
+            label: '発注日',
+            value: 'Kazuki Jin'
+          })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field-readonly({
+          |     label: '発注日',
+          |     value: 'Kazuki Jin'
+          |    })(class='form-readonly')
+
+h2 Input Icon
+-
+  var inputIcon = [
+    {
+      label: '発注日',
+      id: 'example-11',
+      placeholder: '派遣期間',
+      size: 'large',
+      require: true,
+      iconBefore: 'ion-ios-email-outline'
+    },
+    {
+      label: '発注日',
+      id: 'example-11',
+      placeholder: '派遣期間',
+      size: 'large',
+      require: true,
+      iconAfter: 'ion-ios-eye-outline'
+    },
+    {
+      label: '発注日',
+      id: 'example-11',
+      placeholder: '派遣期間',
+      require: true,
+      iconBefore: 'ion-ios-email-outline'
+    },
+    {
+      label: '発注日',
+      id: 'example-11',
+      placeholder: '派遣期間',
+      require: true,
+      iconAfter: 'ion-ios-eye-outline'
+    },
+    {
+      label: '発注日',
+      id: 'example-11',
+      placeholder: '派遣期間',
+      size: 'large',
+      iconBefore: 'ion-ios-email-outline',
+      iconAfter: 'ion-ios-eye-outline',
+      noteText: 'これはメモのテキストです'
+    },
+    {
+      label: '発注日',
+      id: 'example-11',
+      placeholder: '派遣期間',
+      size: 'large',
+      require: true,
+      noticeError: 'もう一度入力してください'
+    }
+  ]
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'large',
+            require: true,
+            iconBefore: 'ion-ios-email-outline'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     require: true,
+          |     iconBefore: 'ion-ios-email-outline'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'large',
+            require: true,
+            iconAfter: 'ion-ios-eye-outline'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     require: true,
+          |     iconAfter: 'ion-ios-eye-outline'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            require: true,
+            iconBefore: 'ion-ios-email-outline'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     require: true,
+          |     iconBefore: 'ion-ios-email-outline'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            require: true,
+            iconAfter: 'ion-ios-eye-outline'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     require: true,
+          |     iconAfter: 'ion-ios-eye-outline'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'large',
+            iconBefore: 'ion-ios-email-outline',
+            iconAfter: 'ion-ios-eye-outline',
+            noteText: 'これはメモのテキストです'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     require: true,
+          |     iconBefore: 'ion-ios-email-outline',
+          |     iconAfter: 'ion-ios-eye-outline',
+          |     noteText: 'これはメモのテキストです'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'large',
+            require: true,
+            noticeError: 'もう一度入力してください'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     require: true,
+          |     noticeError: 'もう一度入力してください'
+          |   })(class='form-error')
+
+h2 Input Size
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'medium'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'medium'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'large',
+            require: true
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     require: true
+          |   })
+
+h2 Input file disabled
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            require: true,
+            placeholder: '派遣期間',
+            disabled: 'disabled'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     disabled: 'disabled'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            iconBefore: 'ion-ios-email-outline',
+            size: 'large',
+            disabled: 'disabled'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     iconBefore: 'ion-ios-email-outline',
+          |     size: 'large'
+          |     disabled: 'disabled'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            require: true,
+            placeholder: '派遣期間',
+            size: 'large',
+            iconAfter: 'ion-ios-eye-outline',
+            disabled: 'disabled'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     require: true,
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     iconAfter: 'ion-ios-eye-outline',
+          |     disabled: 'disabled'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-field({
+            label: '発注日',
+            id: 'example-11',
+            placeholder: '派遣期間',
+            size: 'large',
+            iconBefore: 'ion-ios-email-outline',
+            iconAfter: 'ion-ios-eye-outline',
+            disabled: 'disabled'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-input-field({
+          |     label: '発注日',
+          |     id: 'example-11',
+          |     placeholder: '派遣期間',
+          |     size: 'large',
+          |     iconBefore: 'ion-ios-email-outline',
+          |     iconAfter: 'ion-ios-eye-outline',
+          |     disabled: 'disabled'
+          |   })
+
+h2 Texterea
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-textarea({
+            label: '備考',
+            require: true,
+            placeholder: 'コメントを書く',
+            row: '2'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-textarea({
+          |     label: '発注日',
+          |     require: true,
+          |     placeholder: 'コメントを,
+          |     row: '2'
+          |   })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+         +group-textarea({
+            label: '備考',
+            disabled: 'disabled',
+            placeholder: 'コメントを書く',
+            row: '2'
+        })
+      pre
+        code
+          | form.form-custom
+          |   +group-textarea({
+          |     label: '発注日',
+          |     disabled: 'disabled',
+          |     placeholder: 'コメントを,
+          |     row: '2'
+          |   })
+
+h2 Radio button
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-radio({
+            name: 'language',
+            id: 'jp',
+            label: '日本語',
+            checked: true
+          })
+          +group-input-radio({
+            name: 'language',
+            id: 'en',
+            label: 'English'
+          })
+      pre
+        code
+          | +group-input-radio({
+          |   name: 'language',
+          |   id: 'jp',
+          |   label: '日本語',
+          |   checked: true
+          | })
+          |+group-input-radio({
+          |  name: 'language',
+          |  id: 'en',
+          |  label: 'English'
+          |})
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-radio({
+            name: 'language',
+            id: 'vn',
+            label: 'Viet Nam',
+            checked: true,
+            disabled: true
+          })
+          +group-input-radio({
+            name: 'language',
+            id: 'cn',
+            label: 'China',
+            disabled: true
+          })
+      pre
+        code
+          | +group-input-radio({
+          |   name: 'language',
+          |   id: 'vn',
+          |   label: 'Viet Nam',
+          |   checked: true,
+          |   disabled: true
+          | })
+          |+group-input-radio({
+          |  name: 'language',
+          |  id: 'cn',
+          |  label: 'China',
+          |  disabled: true
+          |})
+
+h2 Checkbox
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-checkbox({
+            name: 'checkbox',
+            id: 'checkbox1',
+            label: 'checkbox label 1',
+            checked: true
+          })
+          +group-input-checkbox({
+            name: 'checkbox',
+            id: 'checkbox2',
+            label: 'checkbox label 2'
+          })
+          +group-input-checkbox({
+            name: 'checkbox',
+            id: 'checkbox3',
+            label: 'checkbox label 3',
+            disabled: true
+          })
+      pre
+        code
+          |+group-input-checkbox({
+          |  name: 'checkbox',
+          |  id: 'checkbox1',
+          |  label: 'checkbox label 1',
+          |  checked: true
+          |})
+          |+group-input-checkbox({
+          |  name: 'checkbox',
+          |  id: 'checkbox2',
+          |  label: 'checkbox label 2'
+          |})
+          |+group-input-checkbox({
+          |  name: 'checkbox',
+          |  id: 'checkbox3',
+          |  label: 'checkbox label 3',
+          |  disabled: true
+          |})
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-checkbox({
+            name: 'checkbox',
+            id: 'checkbox4',
+            checked: true
+          })(class='input-checkbox-custom--no-label')
+          +group-input-checkbox({
+            name: 'checkbox',
+            id: 'checkbox5'
+          })(class='input-checkbox-custom--no-label')
+          +group-input-checkbox({
+            name: 'checkbox',
+            id: 'checkbox6',
+            disabled: true
+          })(class='input-checkbox-custom--no-label')
+      pre
+        code
+          |form.form-custom
+          |  +group-input-checkbox({
+          |    name: 'checkbox',
+          |    id: 'checkbox4',
+          |    checked: true
+          |  })(class='input-checkbox-custom--no-label')
+          |  +group-input-checkbox({
+          |    name: 'checkbox',
+          |    id: 'checkbox5'
+          |  })(class='input-checkbox-custom--no-label')
+          |  +group-input-checkbox({
+          |    name: 'checkbox',
+          |    id: 'checkbox6',
+          |    disabled: true
+          |  })(class='input-checkbox-custom--no-label')
+          
+h2 Selecbox
+.row
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+        -
+          var options = [
+            { value: 'owner', display: 'Owner' },
+            { value: 'member', display: 'Member' },
+            { value: 'viewer', display: 'Viewer' },
+            { value: 'non-member', display: 'Non-member' }
+          ];
+        +selectbox({
+          id: 'member',
+          label: 'Employee',
+          options
+        })
+      pre
+        code
+          | form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +selectbox({
+          |    id: 'member',
+          |    label: 'Employee',
+          |    options
+          |  })
+  .col-6
+    .code-example
+      .demo
+        form.form-custom
+        -
+          var options = [
+            { value: 'owner', display: 'Owner' },
+            { value: 'member', display: 'Member' },
+            { value: 'viewer', display: 'Viewer' },
+            { value: 'non-member', display: 'Non-member' }
+          ];
+        +selectbox({
+          id: 'member',
+          disabled: 'disabled',
+          options
+        })
+      pre
+        code
+          | form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +selectbox({
+          |    id: 'member',
+          |    disabled: 'disabled',
+          |    options
+          |  })
+
+  .col-6
+    .code-example
+      .demo
+        form.form-customize
+          -
+            var options = [
+              { value: 'owner', display: 'Owner' },
+              { value: 'member', display: 'Member' },
+              { value: 'viewer', display: 'Viewer' },
+              { value: 'non-member', display: 'Non-member' }
+            ];
+          +group-selectbox({
+            id: 'member',
+            label: 'Employee',
+            require: true,
+            options
+          })
+      pre
+        code
+          |form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +group-selectbox({
+          |    id: 'member',
+          |    label: 'Employee',
+          |    require: true,
+          |    options
+          |  })
+  .col-6
+    .code-example
+      .demo
+          form.form-customize
+            -
+              var options = [
+                { value: 'owner', display: 'Owner' },
+                { value: 'member', display: 'Member' },
+                { value: 'viewer', display: 'Viewer' },
+                { value: 'non-member', display: 'Non-member' }
+              ];
+            +group-selectbox({
+              id: 'member',
+              label: 'Employee',
+              require: true,
+              options
+            })(class='form-error')
+      pre
+        code
+          |form.form-customize
+          |  -
+          |    var options = [
+          |      { value: 'owner', display: 'Owner' },
+          |      { value: 'member', display: 'Member' },
+          |      { value: 'viewer', display: 'Viewer' },
+          |      { value: 'non-member', display: 'Non-member' }
+          |    ];
+          |  +group-selectbox({
+          |    id: 'member',
+          |    label: 'Employee',
+          |    require: true,
+          |    options
+          |  })(class='form-error')
+.row
+  .col-12
+    .code-example
+      .demo
+        form.form-custom
+          +group-input-list-color({
+            label: 'List color',
+            id: 'example-12',
+            placeholder: 'Color code（ex：000000）'
+          })
+      pre
+        code
+          | form.form-customize
+          |   +group-input-list-color({
+          |     label: 'List color',
+          |     id: 'example-12',
+          |     placeholder: 'Color code（ex：000000）'
+          |  })
