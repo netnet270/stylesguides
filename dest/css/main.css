@@ -13507,10 +13507,4 @@ ol {
 .styleguide .tab-content {
   padding: 30px 15px; }
 
-.styleguide .list-group {
-  position: fixed;
-  z-index: 1;
-  width: 160px;
-  min-width: 160px; }
-
 /*# sourceMappingURL=main.css.map */
