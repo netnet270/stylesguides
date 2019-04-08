@@ -1,3 +1,8 @@
 $(document).ready(function() {
-  console.log('Hello from ./source/js/_test.js');
+  $(".js-toggle-icon").each(function () {
+    $(this).click(function (e) { 
+      e.preventDefault();
+      $(this).toggleClass("show");
+    });
+  });
 });
