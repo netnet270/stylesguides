@@ -13180,9 +13180,11 @@ ol {
     top: 6px; }
     .input-field--large .input-field__icon--before {
       border-right: 1px solid #f0f0f0; }
-  .input-field--large .input-field--icon-before .form-control {
+  .input-field--large.input-field--icon-before .form-control {
     width: calc(100% - 48px);
     margin-left: 48px; }
+  .input-field--large.input-field--icon-before.show {
+    color: #ff6b00; }
 
 .input-checkbox-custom {
   position: relative;
@@ -13502,5 +13504,11 @@ ol {
 
 .styleguide .tab-content {
   padding: 30px 15px; }
+
+.styleguide .list-group {
+  position: fixed;
+  z-index: 1;
+  width: 160px;
+  min-width: 160px; }
 
 /*# sourceMappingURL=main.css.map */

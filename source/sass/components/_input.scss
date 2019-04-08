@@ -78,10 +78,14 @@
       }
     }
 
-    .input-field--icon-before {
+    &.input-field--icon-before {
       .form-control {
         width: calc(100% - 48px);
         margin-left: 48px;
+      }
+
+      &.show {
+        color: $cl-orange;
       }
     }
   }

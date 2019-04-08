@@ -36,5 +36,12 @@
   .tab-content {
     padding: 30px 15px;
   }
+
+  .list-group {
+    position: fixed;
+    z-index: 1;
+    width: 160px;
+    min-width: 160px;
+  }
 }
 
