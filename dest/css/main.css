@@ -13063,6 +13063,8 @@ ol {
       color: #fa8383; }
   .form-customize.form-error .custom-select {
     border: 1px solid #f05151; }
+    .form-customize.form-error .custom-select:focus {
+      border: 1px solid #f05151; }
   .form-customize .error-notice {
     font-size: 12px;
     font-weight: 400;
